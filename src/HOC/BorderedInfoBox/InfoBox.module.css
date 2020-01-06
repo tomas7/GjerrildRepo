@@ -1,0 +1,46 @@
+@import '../../Assets//globalStyles.css';
+
+.bor_box {
+    border: 2px solid var(--g_main-color);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: white;
+    width: 600px;
+    height: auto;
+    margin-left: 0px;
+    position: relative;
+    /* top: 60px; */
+    padding: 20px 0px;
+    border-radius: 5px;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 1800px) {
+
+    .bor_box {
+   
+        width: 800px;
+       
+    }
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    .bor_box {
+        /* margin-left: 50px; */
+    }
+     
+ }
+
+ @media only screen and (max-width: 800px) {
+    .bor_box {
+        margin-left: 0px;
+        width: 100%;
+        margin: 0 auto;
+    }
+     
+ }

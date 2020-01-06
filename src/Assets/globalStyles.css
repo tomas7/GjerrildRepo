@@ -1,0 +1,17 @@
+:root {
+    --b_primary-color: rgba(89, 170, 220, .9);
+    --b_secondary-color: rgba(183, 228, 245, .6);
+    --b_third-color: rgba(191, 218, 235, .4);
+    --b_highLigh-color: #5AAADC;
+    --b_bg-color: rgb(199, 207, 217);
+
+    --g_main-color: #91C84B;
+    --g_primary-color: #759b41e6;
+    --g_secondary-color: #b8da8999;
+    --third-color: #deeccd66;
+    --g_highLigh-color: #66912d;
+    --g__bg-color: #F1F1F1;
+
+    --dar_bg_color: #313a41;
+    --dar_light_bg_color: #7b92a3;
+} 

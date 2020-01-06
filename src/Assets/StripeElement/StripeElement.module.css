@@ -1,0 +1,32 @@
+.stripe {
+    background-color: #66912d;
+    opacity: 0.9;
+    height: 1200px;
+    width: 1200px;
+    position: absolute;
+
+    /* left: 150px;
+    top: 150px;
+    transform: rotate(-35deg);  */
+    transition: 1.5s;
+    clip-path: polygon( 0 0%, /* left top */ 35% 0, /* right top */ 35% 0, /* right bottom */ 0% 0% /* left bottom */ );
+  }
+  
+  .stripe_on {
+    background-color: #66912d;
+    opacity: 0.9;
+    height: 1200px;
+    width: 1200px;
+    position: absolute;
+    /* position: absolute;
+    left: 150px;
+    top: 150px;
+     transform: rotate(-35deg); */
+    transition: 1.5s;
+    
+    clip-path: polygon( 0 0%, /* left top */ 35% 0, /* right top */ 100% 100%, /* right bottom */ 65% 100% /* left bottom */ );
+  }
+/* 
+  .bigWrapper {
+      z-index: 999;
+  } */

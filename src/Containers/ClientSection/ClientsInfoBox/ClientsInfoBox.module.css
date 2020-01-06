@@ -1,0 +1,117 @@
+@import '../../../Assets//globalStyles.css';
+
+.clientInfoBoxWrapper {
+    padding: 00px 30px 30px 30px;
+    height: auto;
+    min-height: 200px;
+    position: relative;
+}
+
+.clientInfoBoxWrapper h3 {
+    font-size: 1.8em;
+    padding: 15px 0px;
+    color: black;
+    
+}
+
+.clientInfoBoxWrapper p {
+   max-width: 600px;
+   padding: 10px 0px 40px 0px;
+   font-size: 1.1em;
+   color: black;
+}
+
+.clientInfoBoxWrapper i {
+    color: black;
+}
+
+.socialActionWrapper {
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.socialActionWrapper a {
+    transition: 1s ease;
+    margin-left: 0px;
+}
+
+
+
+.socialActionWrapper a:hover + img{
+    margin-left: 5px;
+    transition: 1s ease;
+
+}
+
+
+.socialAction {
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.socialAction::after {
+ 
+
+    content: "";
+    display: inline-block;
+    background: url("/src/Img/Assets/Arrow.png") no-repeat top right;
+
+}
+
+.socialActionWrapper img {
+    float: left;
+    width: 34px;
+    height: 32px;
+    margin-left: 0px;
+    transition: 1s ease;
+}
+
+.socialActionWrapper img:hover {
+
+    margin-left: 5px;
+    transition: 1s ease;
+}
+
+
+.dotWrapper {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.dotWrapper div {
+    background-color: var(--dar_light_bg_color);
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    margin: 0px 5px;
+}
+
+@media only screen and (min-width: 1800px) {
+
+    .clientInfoBoxWrapper h3 {
+        font-size: 2.5em;
+        padding: 15px 0px;
+        
+    }
+    
+    .clientInfoBoxWrapper p {
+       max-width: 600px;
+       padding: 10px 0px 40px 0px;
+       font-size: 1.4em;
+    }
+    
+    .clientInfoBoxWrapper i {
+        color: black;
+        font-size: 1.2em;
+    }
+    
+}

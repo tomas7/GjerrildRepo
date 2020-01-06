@@ -1,0 +1,152 @@
+.container {
+    background-color: white;
+
+
+   position: relative;
+   top: -60px;
+
+    min-height: 600px;
+   width: 100%;
+overflow: hidden;
+clip-path: polygon( 0 0%, /* left top */ 100% 6%, /* right top */ 100% 93%, /* right bottom */ 0 100% /* left bottom */ );
+}
+.wrapper {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    padding: 105px 0px 250px 0px;
+
+}
+
+/* .titlePlaceholderWrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.titlePlaceholder {
+
+    position: absolute;
+    opacity: .3;
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
+} */
+
+.wrapper h3 {
+    font-size: 1.8em;
+    padding: 0px 0px 15px 0px;
+    color:black;
+}
+
+.wrapper p {
+   max-width: 600px;
+    color:black;
+    padding: 20px 0px;
+
+}
+
+.socialActionWrapper {
+    position: absolute;
+    bottom: 0px;
+}
+
+.socialActionWrapper a {
+    transition: 1s ease;
+    margin-left: 0px;
+    color: black;
+    font-weight: 400;
+}
+
+.socialActionWrapper a:hover + img{
+    margin-left: 5px;
+    transition: 1s ease;
+}
+
+
+.socialAction {
+    text-decoration: none;
+    color: white;
+    float: left;
+ 
+}
+
+.socialAction::after {
+ 
+
+    content: "";
+    display: inline-block;
+    background: url("/src/Img/Assets/Arrow.png") no-repeat top right;
+
+}
+
+.wrapper img {
+    float: left;
+    width: 34px;
+    height: 32px;
+    margin-left: 0px;
+    transition: 1s ease;
+}
+
+.wrapper img:hover {
+
+    margin-left: 5px;
+    transition: 1s ease;
+}
+
+.contentWrapper {
+    margin-left: 0px;
+    padding: 50px 0px;
+    position: relative;
+    height: auto;
+}
+
+@media only screen and (min-width: 1800px) {
+    .wrapper h3 {
+        font-size: 2.6em;
+    }
+    
+    .wrapper p {
+        font-size: 1.4em;
+        max-width: 800px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    .contentWrapper {
+        margin-left: 50px;
+    }
+     
+ }
+
+ @media only screen and (max-width: 800px) {
+
+    .container {
+        min-height: 450px;
+    }
+    .wrapper {
+        height: unset;
+        min-height: 300px;
+    }
+
+    .contentWrapper {
+        margin-left: 00px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container {
+        padding-top: 25px;
+        
+    }
+
+    .wrapper p {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+     
+ }

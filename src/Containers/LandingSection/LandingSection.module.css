@@ -1,0 +1,187 @@
+@import '../../Assets/globalStyles.css';
+
+.container {
+  
+    height: 100vh;
+   top: 0px;
+/* background-image: url('../../Img//Assets/Landing_bg_e.png'); */
+/* background-repeat: no-repeat;
+background-size:  auto 100%; 
+background-position: right center;  */
+background-color: white;
+/* background: #272727 url('../../Img//Assets/Logo_bg.png'); */
+overflow: hidden;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.textBox {
+  
+position: relative;
+top: 350px;
+padding-bottom: 150px;
+    color: red!important;
+    text-align: center;
+    z-index: 99;
+}
+
+.textBox h1 {
+    font-size: 2.2em;
+    padding: 0px 0px 12px 0px;
+    color:black;
+    
+}
+.textBox p {
+    font-size: 1.2em;
+    line-height: 19pt;
+    color:black;
+    
+}
+
+.textBox img {
+    transform: rotate(90deg);
+    margin-top: 10%;
+    height: 80px;
+    width: auto;
+    -webkit-animation: bounce-in-top 4.1s both infinite;
+    animation: bounce-in-top 4.1s both infinite;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-10px) rotate(90deg);
+                transform: translateY(-10px) rotate(90deg);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    
+      }
+      33% {
+        -webkit-transform: translateY(0)  rotate(90deg);
+                transform: translateY(0)  rotate(90deg);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        opacity: 1;
+      }
+      50% {
+        -webkit-transform: translateY(15px)  rotate(90deg);
+                transform: translateY(15px)  rotate(90deg);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+      66% {
+        -webkit-transform: translateY(0)  rotate(90deg);
+                transform: translateY(0)  rotate(90deg);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      100% {
+        -webkit-transform: translateY(-10px)  rotate(90deg);
+                transform: translateY(-10px)  rotate(90deg);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+  }  
+  
+  @keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-10px) rotate(90deg);
+              transform: translateY(-10px) rotate(90deg);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+  
+    }
+    33% {
+      -webkit-transform: translateY(0)  rotate(90deg);
+              transform: translateY(0)  rotate(90deg);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: translateY(15px)  rotate(90deg);
+              transform: translateY(15px)  rotate(90deg);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    66% {
+      -webkit-transform: translateY(0)  rotate(90deg);
+              transform: translateY(0)  rotate(90deg);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(-10px)  rotate(90deg);
+              transform: translateY(-10px)  rotate(90deg);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+ 
+  }  
+
+.bgImg {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 65%;
+    /* z-index: 9; */
+    float: right;
+}
+
+@media only screen and (min-width: 1800px) {
+    .textBox h1 {
+        font-size: 2.8em;
+        padding: 0px 0px 12px 0px;
+    }
+    .textBox p {
+        font-size: 1.5em;
+        line-height: 19pt;
+    }
+    .bgImg {
+        height: 85%;
+    }
+    
+}
+
+@media only screen and (max-width: 1300px) {
+   .wrapper {
+       margin-left: 150px;
+   }
+    
+.bgImg {
+    
+        height:45%;
+     
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        margin-left: 0px;
+        width: 100%;
+      
+        text-align: center;
+    }
+
+    .textBox {
+        margin: 0px 50px;
+        top: 200px;
+    }
+
+    .bgImg{
+            display: none;
+    }
+     
+ }
+
+ 
+@media only screen and (max-width: 320px) {
+        .textBox {
+                margin: 0px 10px;
+                top: 200px;
+            }
+         
+     }
